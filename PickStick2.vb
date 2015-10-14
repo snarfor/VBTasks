@@ -9,11 +9,11 @@ Public Class frmPickUpSticksBeta
         NewGame(str, A)
 
         If A Mod 6 = 1 Then
-            YourMove(n)
+            // && DoNothing
         ElseIf A Mod 6 = 2 Then
-            YourMove(n)
+            // && DoNothing
         Else
-            ComputerMove(n)
+            ComputerMove(n) // && yes, computer first
 
         End If
     End Sub
