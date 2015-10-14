@@ -8,11 +8,7 @@ Public Class frmPickUpSticksBeta
         Dim A As Integer = Len(str)
         NewGame(str, A)
 
-        If A Mod 6 = 1 Then
-            // && DoNothing
-        ElseIf A Mod 6 = 2 Then
-            // && DoNothing
-        Else
+        If A Mod 6 <> 1 And A Mod 6 <> 2 Then
             ComputerMove(n) // && yes, computer first
 
         End If
